@@ -2,42 +2,27 @@ package Aula6;
 
 public class Preguica extends Animal
 {
-	private String raca;
-	private double tamanho;
-	private double peso;
-	
-	public Preguica(String raca, double tamanho, double peso)
+	public Preguica()
 	{
-		super(nome,idade);
-		this.raca = raca;
-		this.tamanho = tamanho;
-		this.peso = peso;
+		super("preguica");
 	}
-	public void infoPreguica()
+	@Override
+	public void Nome(String nomeAnimal)
 	{
-		System.out.println("\nNome: "+getNome());
-		System.out.println("\nIdade: "+getIdade());
-		System.out.println("\nRaca: "+raca);
-		System.out.println("\nTamanho: "+tamanho);
-		System.out.println("\nPeso: "+peso);
-		
+		System.out.println("\nNome da preguicinha: "+nomeAnimal);
 	}
-	public String getRaca() {
-		return raca;
+	@Override
+	public void Idade(String idadeAnimal)
+	{
+		System.out.println("\nIdade da preguicinha: "+idadeAnimal);
 	}
-	public void setRaca(String raca) {
-		this.raca = raca;
+	@Override
+	public void Som(String somAnimal)
+	{
+		System.out.println("\nSom que a preguica realiza: "+somAnimal);
 	}
-	public double getTamanho() {
-		return tamanho;
+	public void subirArvore()
+	{
+		System.out.println("\nA preguica dorme cerca de 14h por dia nas arvores.");
 	}
-	public void setTamanho(double tamanho) {
-		this.tamanho = tamanho;
-	}
-	public double getPeso() {
-		return peso;
-	}
-	public void setPeso(double peso) {
-		this.peso = peso;
-	} 
 }

@@ -2,43 +2,24 @@ package Aula6;
 
 public class Cavalo extends Animal
 {
-	private String raca;
-	private double tamanho;
-	private double peso;
-	
-	public Cavalo(String raca, double tamanho, double peso)
+	public Cavalo()
 	{
-		super(nome,idade);
-		this.raca = raca;
-		this.tamanho = tamanho;
-		this.peso = peso;
+		super("cavalo");
 	}
-	public void infoCavalo()
+	public void Nome(String nomeAnimal)
 	{
-		System.out.println("\nNome: "+getNome());
-		System.out.println("\nIdade: "+getIdade());
-		System.out.println("\nRaca: "+raca);
-		System.out.println("\nTamanho: "+tamanho);
-		System.out.println("\nPeso: "+peso);
-		
+		System.out.println("\nNome do cavalo: "+nomeAnimal);
 	}
-	public String getRaca() {
-		return raca;
+	public void Idade(int idadeAnimal)
+	{
+		System.out.println("\nQual a idade do cavalo: "+idadeAnimal);
 	}
-	public void setRaca(String raca) {
-		this.raca = raca;
+	public void Som(String somAnimal)
+	{
+		System.out.println("\nSom que o cavalo realiza: "+somAnimal);
 	}
-	public double getTamanho() {
-		return tamanho;
+	public void Correr()
+	{
+		System.out.println("\nMeu cavalo ama correr pelos pastos verdejantes!");
 	}
-	public void setTamanho(double tamanho) {
-		this.tamanho = tamanho;
-	}
-	public double getPeso() {
-		return peso;
-	}
-	public void setPeso(double peso) {
-		this.peso = peso;
-	} 
-	
 }
