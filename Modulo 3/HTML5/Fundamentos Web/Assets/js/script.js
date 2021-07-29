@@ -18,19 +18,41 @@ function validaNome() {
         txtNome.style.color='green'
         let nomeOk = true
 }
-
-function validaEmail(){
-    let txt = document.querySelector('#txtEmail')
-
-    if(email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1){
-        txtEmail.innerHTML = 'E-mail invalido'
-        txtEmail.style.color = 'red'
-    } else {
-        textEmail.innerHTML='E-mail valido'
-        txtEmail.style.color='green '
-        let emailOk = true
-    }
 }
+
+// function validaEmail(){
+//     let txt = document.querySelector('#txtEmail')
+
+//     if(email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1){
+//         txtEmail.innerHTML = 'E-mail invalido'
+//         txtEmail.style.color = 'red'
+//         let emailOk = false
+//     } else {
+//         txtEmail.innerHTML = 'E-mail valido'
+//         txtEmail.style.color = 'green'    
+//         let emailOk = true
+//     }
+// }
+
+function validaEmail() {
+    /* Caso exista esse elemento dentro da abilidade ele irá retornar -1 
+      é mais usado para validar o email.*/
+
+      let txt = document.querySelector('#txtEmail')
+
+    if (
+      email.value.indexOf('@') == -1 ||
+      email.value.indexOf('.') == -1
+    ) {
+      txtEmail.innerHTML = 'Invalido'
+      txtEmail.style.color = 'red'
+      let emailOk = false
+    } else {
+      txtEmail.innerHTML = 'Valido'
+      txtEmail.style.color = 'green'
+      let emailOk = true
+    }
+  }
 
 function enviar (){
     if(nomeOk == true && emailOk == true){
