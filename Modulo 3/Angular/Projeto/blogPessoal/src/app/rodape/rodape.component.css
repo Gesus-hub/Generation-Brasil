@@ -5,3 +5,15 @@ ul.social-network{
 ul.social-network{
     display: inline;
 }
+
+.face :hover{
+    color: #3b5998;
+}
+
+.insta :hover{
+    color: #c13584;
+}
+
+.linke :hover{
+    color: #0072b1;
+}
